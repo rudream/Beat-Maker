@@ -31,15 +31,15 @@ svg {
 }
 
 .clap-pad {
-    background: rgb(226, 9, 9);
+    background: rgb(255, 33, 33);
 }
 
 .clap-pad.active {
-    background: rgb(179, 5, 5);
+    background: rgb(148, 4, 4);
 }
 
 .kick-pad {
-    background: rgb(6, 149, 6);
+    background: rgb(14, 153, 14);
 }
 
 .kick-pad.active {
@@ -47,26 +47,26 @@ svg {
 }
 
 .snare-pad {
-    background: rgb(161, 74, 243);
+    background: rgb(172, 90, 250);
 }
 
 .snare-pad.active {
-    background: rgb(119, 37, 195);
+    background: rgb(99, 26, 168);
 }
 
 .tom-pad {
-    background: rgb(251, 144, 12);
+    background: rgb(253, 153, 31);
 }
 
 .tom-pad.active {
-    background: rgb(194, 109, 5);
+    background: rgb(180, 101, 4);
 }
 
 .hihat-pad {
-    background: rgb(216, 231, 0);
+    background: rgb(238, 255, 0);
 }
 .hihat-pad.active {
-    background: rgb(178, 190, 0);
+    background: rgb(136, 146, 1);
 }
 
 .cowbell-pad {
@@ -74,12 +74,12 @@ svg {
 }
 
 .cowbell-pad.active {
-    background: rgb(216, 115, 132);
+    background: rgb(177, 82, 98);
 }
 
 .sequencer {
     display: flex;
-    min-height: 100vh;
+    max-height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -95,7 +95,7 @@ svg {
     align-items: center;
     width: 70%;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: auto;
 }
 
 .clap,
@@ -144,7 +144,7 @@ svg {
 
 .controls select {
     grid-column: 5/6;
-    font-size: 0.8rem;
+    font-size: 0.6vw;
 }
 
 .pad {
@@ -158,4 +158,14 @@ svg {
     color: white;
     border: none;
     cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+@keyframes playTrack {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
 }
