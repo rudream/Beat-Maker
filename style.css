@@ -79,7 +79,7 @@ svg {
 
 .sequencer {
     display: flex;
-    max-height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -164,6 +164,40 @@ svg {
 
 .mute.active {
     background: rgb(70, 70, 70);
+}
+
+.tempo {
+    margin: auto;
+    width: 30%;
+}
+
+.tempo-slider {
+    -webkit-appearance: none;
+    padding: 0.2rem;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    background: rgb(122, 122, 122);
+    border-radius: 1rem;
+}
+
+.tempo-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    margin-bottom: auto;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    background: white;
+    cursor: pointer;
+}
+
+.tempo p {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 @keyframes playTrack {
