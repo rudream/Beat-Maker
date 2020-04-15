@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+h1 {
+    color: white;
+}
+
 body {
     font-family: sans-serif;
+    background: #2f2f2f;
 }
 
 i,
@@ -13,20 +18,144 @@ svg {
     pointer-events: none;
 }
 
+.clap-pad,
 .kick-pad,
 .snare-pad,
-.hihat-pad {
+.tom-pad,
+.hihat-pad,
+.cowbell-pad {
     width: 5rem;
     height: 5rem;
     margin: 1rem 0.5rem;
     cursor: pointer;
 }
 
+.clap-pad {
+    background: rgb(226, 9, 9);
+}
+
+.clap-pad.active {
+    background: rgb(179, 5, 5);
+}
+
 .kick-pad {
+    background: rgb(6, 149, 6);
+}
+
+.kick-pad.active {
+    background: rgb(0, 92, 0);
 }
 
 .snare-pad {
+    background: rgb(161, 74, 243);
+}
+
+.snare-pad.active {
+    background: rgb(119, 37, 195);
+}
+
+.tom-pad {
+    background: rgb(251, 144, 12);
+}
+
+.tom-pad.active {
+    background: rgb(194, 109, 5);
 }
 
 .hihat-pad {
+    background: rgb(216, 231, 0);
+}
+.hihat-pad.active {
+    background: rgb(178, 190, 0);
+}
+
+.cowbell-pad {
+    background: rgb(255, 165, 180);
+}
+
+.cowbell-pad.active {
+    background: rgb(216, 115, 132);
+}
+
+.sequencer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clap-track,
+.kick-track,
+.snare-track,
+.tom-track,
+.hihat-track,
+.cowbell-track {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.clap,
+.kick,
+.snare,
+.tom,
+.hihat,
+.cowbell {
+    display: flex;
+}
+
+.controls button {
+    padding: 1rem;
+    border: none;
+    background: rgb(122, 122, 122);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 1rem;
+}
+
+.controls select {
+    background: rgb(93, 93, 93);
+    color: white;
+    border: none;
+    padding: 0.5rem 0.3rem;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: 30% 10% 20% 10% 30%;
+    margin: 3rem 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.controls button {
+    grid-column: 3/4;
+}
+
+.controls h1 {
+    grid-column: 1/2;
+    font-size: 1.2vw;
+}
+
+.controls select {
+    grid-column: 5/6;
+    font-size: 0.8rem;
+}
+
+.pad {
+    transition: all 0.5s ease;
+}
+
+.play {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: rgb(122, 122, 122);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
