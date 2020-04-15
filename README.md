@@ -1,4 +1,4 @@
-﻿# Beat-Maker
+﻿# Music Maker
 
 A small app built in JavaScript that lets the user create short beat loops (10 notes long).
 
