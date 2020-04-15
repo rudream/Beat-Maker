@@ -148,6 +148,10 @@ class DrumKit {
         this.tempoNumber.innerText = `${e.target.value}`;
         this.bpm = e.target.value;
     }
+    updateTempo() {
+        this.start();
+        this.updateButton();
+    }
 }
 
 const drumKit = new DrumKit();
@@ -180,4 +184,8 @@ drumKit.muteButtons.forEach((btn) => {
 
 drumKit.tempoSlider.addEventListener("input", function (e) {
     drumKit.changeTempo(e);
+});
+
+drumKit.tempoSlider.addEventListener("change", function () {
+    drumKit.updateTempo();
 });
