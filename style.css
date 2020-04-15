@@ -159,6 +159,11 @@ svg {
     border: none;
     cursor: pointer;
     margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.mute.active {
+    background: rgb(70, 70, 70);
 }
 
 @keyframes playTrack {
