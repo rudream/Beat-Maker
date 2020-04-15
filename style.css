@@ -79,7 +79,7 @@ svg {
 
 .sequencer {
     display: flex;
-    min-height: 100vh;
+    min-height: 99vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -167,7 +167,6 @@ svg {
 }
 
 .tempo {
-    margin: auto;
     width: 30%;
 }
 
@@ -198,6 +197,13 @@ svg {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     text-align: center;
+}
+
+.play-and-tempo {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 @keyframes playTrack {
