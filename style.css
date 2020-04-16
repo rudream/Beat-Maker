@@ -24,8 +24,8 @@ svg {
 .tom-pad,
 .hihat-pad,
 .cowbell-pad {
-    width: 5rem;
-    height: 5rem;
+    width: 8vh;
+    height: 8vh;
     margin: 1rem 0.5rem;
     cursor: pointer;
 }
@@ -93,7 +93,8 @@ svg {
 .cowbell-track {
     display: flex;
     align-items: center;
-    width: 70%;
+    min-width: 70%;
+    max-width: 90%;
     justify-content: space-between;
     margin-top: auto;
 }
@@ -112,7 +113,9 @@ svg {
     border: none;
     background: rgb(122, 122, 122);
     color: white;
-    font-size: 1rem;
+    height: 6vh;
+    width: 6vh;
+    font-size: 1vw;
     cursor: pointer;
     transition: all 0.5s ease;
     border-radius: 1rem;
@@ -130,6 +133,8 @@ svg {
     grid-template-columns: 30% 10% 20% 10% 30%;
     margin: 3rem 2rem;
     width: 100%;
+    min-width: 20vw;
+    max-width: 30vw;
     align-items: center;
 }
 
@@ -139,7 +144,7 @@ svg {
 
 .controls h1 {
     grid-column: 1/2;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 .controls select {
